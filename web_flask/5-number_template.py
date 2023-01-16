@@ -39,7 +39,7 @@ def python_route(text="is cool"):
 def is_number(n):
     '''Display “n is a number” only if n is an integer'''
 
-    if (type(n) == int):
+    if type(n) == int:
         return "{} is a number".format(n)
 
 
@@ -48,7 +48,7 @@ def num_temp(n):
     '''Displays a HTML page only if n is an integer'''
 
     if type(n) == int:
-        return render_template('5-number_template.py', n=n)
+        return render_template('5-number.html', n=n)
 
 
 if __name__ == "__main__":
