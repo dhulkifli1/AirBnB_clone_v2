@@ -23,8 +23,7 @@ def hbnb():
 def c_var():
     '''Returns C plus variable text'''
 
-    text_new = text.replace("_", " ")
-    return "C " + text_new
+    return "C " + text.replace("_", " ")
 
 
 if __name__ == "__main__":
