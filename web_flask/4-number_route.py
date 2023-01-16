@@ -20,7 +20,7 @@ def hbnb():
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def c_var():
+def c_var(text):
     '''Returns C plus variable text'''
 
     return 'C {}'.format(text.replace('_', ' '))
@@ -35,7 +35,7 @@ def python_route(text="is cool"):
 
 
 @app.route('/number/<n>', strict_slashes=False)
-def is_number():
+def is_number(n):
     '''Display “n is a number” only if n is an integer'''
 
     if (type(n) == int):
